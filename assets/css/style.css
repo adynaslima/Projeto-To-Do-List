@@ -1,0 +1,109 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    color:rgb(67, 70, 73);
+}
+
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(165,174,185,1) 100%);
+}
+
+button {
+    background-color: rgb(240, 248, 255);
+    color:rgb(73, 4, 70);
+    border: 1px solid rgb(73, 4, 70);
+    padding: .3rem .6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(211, 67, 240);
+    color:rgb(240, 248, 255);
+}
+
+button:hover > i {
+    color:rgb(240, 248, 255);
+}
+
+button i {
+    color:rgb(73, 4, 70);
+    pointer-events: none;
+}
+
+input {
+    padding: 0.3rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: rgb(240, 248, 255);
+    padding: 1.5rem;
+    border-radius: 30px 5px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(73, 4, 70);
+}
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(73, 4, 70);
+}
+
+#todo-form p, #edit-form p {
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+}
+
+#btn-cancel {
+    margin-top: 1rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(73, 4, 70);
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+}
+
+.todo button {
+    margin-left: .3rem;
+}
+
+.done {
+    background-color: rgba(165,174,185,1);
+}
+
+.done h3 {
+    text-decoration: line-through;
+    font-style: italic;
+}
