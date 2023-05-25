@@ -12,7 +12,7 @@
 <body>
     <section class="container">
         <h1>Lista de Tarefas</h1>
-        <form class="todo-form">
+        <form id="todo-form">
             <p>Adicione aqui suas tarefas diárias:</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você vai fazer?">
@@ -21,12 +21,12 @@
                 </button>
             </div>
         </form>
-        <form class="edit-form">
+        <form id="edit-form">
             <p>Edite suas tarefas:</p>
             <div >
                 <input type="text" id="edit-input" placeholder="">
                 <button type="submit">
-                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-sharp fa-solid fa-check-double"></i>
                 </button>
             </div>
             <button id="btn-cancel">Cancelar</button>
@@ -40,7 +40,7 @@
                         <i class="fa-sharp fa-solid fa-pen"></i>
                     </button>
                     <button class="remove">
-                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-x"></i>
                     </button>
                 </div>
             </div>
